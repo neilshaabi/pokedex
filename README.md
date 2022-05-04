@@ -17,7 +17,7 @@ To retrieve information for a Pokémon, the user must enter its name when prompt
 
 Note that the Pokémon names accepted by the program are **case-insensitive** - information will be retrieved for a Pokémon as long as its name is spelled correctly, regardless of its capitalisation.
 
-
+### Examples
 ```
 Enter a Pokémon name: pikachu
 - name: pikachu
