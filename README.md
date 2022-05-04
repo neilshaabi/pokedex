@@ -7,6 +7,7 @@ Command line program written in Haskell that takes a Pokémon's name as input an
 ## Building/Running
 
 With GHC, cabal and stack installed, the library can be built by running `stack build` in a Terminal window.
+
 The program can then be run locally using the command: `stack run`.
 
 
