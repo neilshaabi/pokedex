@@ -26,7 +26,7 @@ main = do
         Handler (\(e :: HttpException) -> printErrorMsg "Pokémon not found"),       
         Handler (\(e :: JSONError)     -> printErrorMsg "No name entered")]
 
--- | Calls functions to retrieves and output information for a given Pokemon name
+-- | Calls functions to retrieve and output information for a given Pokemon name
 getPokemon :: Text -> IO ()
 getPokemon name = do
     pokemonInfo <- callPokemonAPI name
@@ -64,7 +64,7 @@ printPokemon Pokemon{..} PokemonSpecies{..} =
             replaceNewlines :: Text -> Text
             replaceNewlines text = foldr (\c -> replace c " ") text ["\n", "\f"]
 
--- | Prints error message when input is invalid, prompts user to re-enter name
+-- | Prints error message when input is invalid, prompts user to retry
 printErrorMsg :: Text -> IO ()
 printErrorMsg msg = do
     T.putStrLn (msg <> ", please try again.")
